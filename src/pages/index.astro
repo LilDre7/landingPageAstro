@@ -13,6 +13,8 @@ const hobbies = [
   "bailar",
   "escuchar musica",
 ];
+
+const isActive = false;
 ---
 
 <h1 class={color}>
@@ -22,6 +24,16 @@ const hobbies = [
 <h1>
   {hobbies[0]}
 </h1>
+
+<h3>
+  {
+    isActive ? (
+      <h4>El usuario esta activo</h4>
+    ) : (
+      <h5>El usuario esta inactivo</h5>
+    )
+  }
+</h3>
 
 <ul>
   {
@@ -38,5 +50,11 @@ const hobbies = [
   body {
     background-color: #13151a;
     color: white;
+  }
+  h5 {
+    color: rgb(226, 43, 43);
+  }
+  h4 {
+    color: rgb(89, 255, 0);
   }
 </style>
