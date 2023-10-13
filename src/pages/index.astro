@@ -1,11 +1,38 @@
 ---
 const title = "Hello soy Alvaro developer";
 const color = "#ffffff";
+
+const hobbies = [
+  "Programar",
+  "gym",
+  "leer",
+  "jugar clash of clan",
+  "comer",
+  "dormir",
+  "sol",
+  "bailar",
+  "escuchar musica",
+];
 ---
 
 <h1 class={color}>
   {title}
 </h1>
+
+<h1>
+  {hobbies[0]}
+</h1>
+
+<ul>
+  {
+    hobbies.map((hobbie) => (
+      <li>
+        <h3>{hobbie + " ----- me gusta estas cosas"}</h3>
+        <button>LIKE</button>
+      </li>
+    ))
+  }
+</ul>
 
 <style>
   body {
