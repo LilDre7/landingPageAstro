@@ -1,0 +1,13 @@
+---
+const URL =
+  "https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=demo";
+
+const response = await fetch(URL);
+
+const post = await response.json();
+---
+
+<h1>
+  {post.items} -
+  {post.feed[0].time_published}
+</h1>
