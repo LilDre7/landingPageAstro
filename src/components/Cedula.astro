@@ -1,0 +1,24 @@
+---
+const { title, txt } = Astro.props;
+---
+
+<div class="card">
+  <h1>{title}</h1>
+  <h5><span>DNEI:</span> 118630492</h5>
+  <p>Soy desarrollador web full-stack el mejor</p>
+  <span>Estudiante en pasantia</span>
+</div>
+
+<style>
+  .card {
+    background: beige;
+    border-radius: 8px;
+    box-shadow:
+      0 2px 4px 0 rgba(70, 38, 213, 0.591),
+      0 25px 50px 0 rgba(27, 220, 185, 0.746);
+    width: 500px;
+    color: black;
+    padding: 20px;
+    margin-bottom: 5px;
+  }
+</style>
