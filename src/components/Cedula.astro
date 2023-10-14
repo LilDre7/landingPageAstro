@@ -1,11 +1,21 @@
 ---
-const { title, txt } = Astro.props;
+interface Props {
+  title?: string;
+  txt?: string;
+  dnei?: string;
+}
+
+const {
+  title = "ErrorDev",
+  txt = "🦕",
+  dnei = "⚔️",
+} = Astro.props;
 ---
 
 <div class="card">
   <h1>{title}</h1>
-  <h5><span>DNEI:</span> 118630492</h5>
-  <p>Soy desarrollador web full-stack el mejor</p>
+  <h5><span>DNEI:</span> {dnei}</h5>
+  <p>{txt}</p>
   <span>Estudiante en pasantia</span>
 </div>
 
